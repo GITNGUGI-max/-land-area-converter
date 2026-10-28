@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land Area Converter</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="converter">
+        <h1>Land Area Converter</h1>
+        <form action="" id="converter-form">
+            <div class="field">
+                <label for="area">Enter Land Area</label>
+                <input type="number" id="area" placeholder="For example, 1000" min="0" step="any" required>
+            </div>
+            <div class="field">
+                <label for="from-unit">Convert from:</label>
+                <select name="" id="from-unit">
+                    <option value="sqm">Square Metre (m²)</option>
+                    <option value="acres">Acres</option>
+                    <option value="hectares">Hectares</option>
+                </select>
+            </div>
+             <div class="field">
+                <label for="to-unit">Convert to:</label>
+                <select name="" id="to-unit">
+                    <option value="sqm">Square Metre (m²)</option>
+                    <option value="acres">Acres</option>
+                    <option value="hectares">Hectares</option>
+                </select>
+            </div>
+            <button type="submit">Convert</button>
+        </form>
+        <p id="result" aria-live="polite">
+            Your results will appear here.
+        </p>
+    </main>
+</body>
+</html>
